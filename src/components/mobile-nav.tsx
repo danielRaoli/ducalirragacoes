@@ -7,7 +7,7 @@ export function MobileNav() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Menu size={24} className="text-white" />
+        <Menu size={24} className="text-white md:hidden" />
       </SheetTrigger>
       <SheetContent side="right" className="w-[300px] bg-white z-50">
         <div className="flex flex-col gap-4 mt-8">

@@ -12,7 +12,7 @@ export default function HeroSection() {
       />
       <div className="absolute inset-0 bg-black bg-opacity-40" />
 
-      <div className="absolute inset-0 flex flex-col justify-center items-start px-4  py- md:px-20">
+      <div className="absolute inset-0 flex flex-col justify-center items-start px-4  py-20 md:px-20">
         <div className="container mx-auto">
           <h1 className="text-3xl md:text-6xl font-bold text-white mb-4">
             Ducal Irrigações - Soluções em
