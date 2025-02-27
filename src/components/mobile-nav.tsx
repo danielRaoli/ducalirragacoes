@@ -18,10 +18,10 @@ export function MobileNav() {
             Início
           </Link>
           <Link
-            href="/sobre"
+            href="/blog"
             className="text-lg font-medium text-blue-950 hover:text-blue-600 transition-colors"
           >
-            Sobre
+            Blog
           </Link>
           <Link
             href="/produtos"
