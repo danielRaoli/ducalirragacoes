@@ -1,14 +1,21 @@
+// app/blog/[id]/page.tsx
 import { notFound } from "next/navigation";
-import { getById, Post } from "@/lib/posts";
 import Image from "next/image";
 import Link from "next/link";
+import { getById } from "../../../lib/posts"; // Ajuste o caminho conforme necessário
 
-export default async function PostPage({ params }: { params: { id: string } }) {
-  const post = getById(Number(params.id)) as Post;
+export default async function PostPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  const post = getById(Number(id));
 
   if (!post) {
     notFound();
   }
+
   return (
     <main className="w-full py-10">
       <div className="w-full bg-blue-950 h-[120px]"></div>
@@ -18,17 +25,17 @@ export default async function PostPage({ params }: { params: { id: string } }) {
       <h1 className="text-blue-950 font-bold text-3xl my-10 text-center md:text-4xl">
         {post.titulo}
       </h1>
-      <div className=" w-[85%] md:w-[50%]  mx-auto h-[400px] flex justify-center relative">
+      <div className="w-[85%] md:w-[50%] mx-auto h-[400px] flex justify-center relative">
         <Image
           src={post.imagem}
           alt="imagem sobre artigo de irrigação"
           fill
           className="object-cover"
-        ></Image>
+        />
       </div>
       <div className="flex flex-col gap-4 p-4 py-10 md:px-40">
-        {post.topicos.map((topico) => (
-          <div>
+        {post.topicos.map((topico, index) => (
+          <div key={index}>
             <h2 className="text-blue-800 font-semibold text-xl md:text-2xl">
               {topico.subtitulo}
             </h2>

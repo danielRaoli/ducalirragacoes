@@ -10,7 +10,7 @@ export type Topico = {
     topicos: Topico[];
   };
   
-  const posts: Post[] = [
+   const postsData: Post[] = [
     {
       id:1,
         imagem: "/gotejamento.jpg",
@@ -243,10 +243,8 @@ export type Topico = {
   ];
   
 
-  export function getById(id: number): Post | null{
-    return posts.find(p => p.id === id) ?? null
+  export  function getById(id: number): Post | null{
+    return postsData.find(p => p.id === id) ?? null
   }
-
-  export default posts;
   
-  
+  export default postsData;

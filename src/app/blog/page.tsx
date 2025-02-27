@@ -10,12 +10,12 @@ export default function Blog() {
         <div className="relative w-full h-[50vh] md:h-[60vh]">
           <Image
             className="object-cover object-center"
-            src="/irrigacaoimage.jpg"
+            src="/pivocentral.jpg"
             alt="banner contendo imagem de irrigação"
             fill
             priority
           />
-          <div className="absolute inset-0 bg-black bg-opacity-40" />
+          <div className="absolute inset-0 bg-black bg-opacity-50" />
           <div className="absolute inset-0 z-50 flex items-center justify-center text-white">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-center px-4">
               Aprenda Tudo Sobre Irrigações

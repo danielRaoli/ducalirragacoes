@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
+    "target": "es5", // Mudar de "ES2017" para "es5" para alinhar com o padrão Next.js
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -8,7 +8,7 @@
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "bundler", // Está correto para Next.js 13+
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
