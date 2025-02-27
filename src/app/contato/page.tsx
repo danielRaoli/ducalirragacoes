@@ -39,45 +39,62 @@ export default function Contato() {
           <span className="font-semibold text-md">
             Atendimento Personalizado
           </span>
-          <Button className="flex bg-blue-900 text-white rounded-full justify-between items-center hover:scale-110 transition-transform w-full md:w-1/2 lg:w-1/3  p-8 my-4">
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=5574999220117&text=Ol%C3%A1%2C%20venho%20do%20linktree!%20Gostaria%20de%20ser%20atendido!"
+            className="flex bg-blue-900  text-white rounded-full justify-between items-center hover:scale-110 transition-transform w-full md:w-1/2 lg:w-1/3  p-4 my-4"
+          >
             <FaWhatsapp className="min-w-[30px] min-h-[30px]" />
             <div className="flex gap-2 items-center ">
               <span className="text-lg">Canal de Atendimento</span>
               <div className="w-4 h-4 bg-green-500 rounded-full"></div>
             </div>
             <div></div>
-          </Button>
+          </a>
 
           <span className="mb-4">Links Úteis</span>
 
-          <Button className="flex mb-2 bg-blue-900 text-white rounded-full justify-between items-center hover:scale-110 transition-transform w-full md:w-1/3 p-8 ">
+          <a
+            href="https://www.instagram.com/ducalirrigacoes/"
+            className="flex mb-2 bg-blue-900 text-white rounded-full justify-between items-center hover:scale-110 transition-transform w-full md:w-1/3 p-4 "
+          >
             <InstagramLogoIcon className="min-w-[30px] min-h-[30px]" />
             <div className="flex gap-2 items-center ">
               <span className="text-lg">Instagram</span>
             </div>
             <div></div>
-          </Button>
-          <Button className="flex mb-2 bg-blue-900 text-white rounded-full justify-between items-center hover:scale-110 transition-transform w-full md:w-1/3 p-8">
+          </a>
+          <a
+            href="https://maps.app.goo.gl/VnFfisy8wm4Nang68"
+            className="flex mb-2 bg-blue-900 text-white rounded-full justify-between items-center hover:scale-110 transition-transform w-full md:w-1/3 p-4"
+          >
             <CiLocationOn className="min-w-[30px] min-h-[30px]" />
-            <div className="flex gap-2 items-center ">
-              <span className="text-lg">Localização</span>
-            </div>
+
+            <span className="text-lg">Localização</span>
+
             <div></div>
-          </Button>
-          <Button className="flex mb-2 bg-blue-900 text-white rounded-full justify-between items-center hover:scale-110 transition-transform w-full md:w-1/3 p-8 ">
+          </a>
+          <a
+            href="https://www.facebook.com/ducalirrigacoes/"
+            target="_blank"
+            className="flex mb-2 bg-blue-900 text-white rounded-full justify-between items-center hover:scale-110 transition-transform w-full md:w-1/3 p-4 "
+          >
             <CiFacebook className="min-w-[30px] min-h-[30px]" />
-            <div className="flex gap-2 items-center ">
-              <span className="text-lg">Facebook</span>
-            </div>
+
+            <span className="text-lg">Facebook</span>
+
             <div></div>
-          </Button>
-          <Button className="flex mb-2 bg-blue-900 text-white rounded-full justify-between items-center hover:scale-110 transition-transform w-full md:w-1/3 p-8 ">
+          </a>
+          <a
+            href="/"
+            className="flex mb-2 bg-blue-900 text-white rounded-full justify-between items-center hover:scale-110 transition-transform w-full md:w-1/3 p-4"
+          >
             <MdComputer className="min-w-[30px] min-h-[30px]" />
-            <div className="flex gap-2 items-center ">
-              <span className="text-lg">Site</span>
-            </div>
+
+            <span className="text-lg">Site</span>
+
             <div></div>
-          </Button>
+          </a>
         </div>
       </main>
     </>

@@ -22,9 +22,16 @@ export default function Produtos() {
                     className="rounded-t-md  object-cover object-[0%_80%] md:object-[0%_70%]"
                   />
                 </div>
-                <Button className="bg-blue-800 w-[80%] text-white rounded-xl">
-                  Comprar Agora
-                </Button>
+                <a
+                  className="w-full flex justify-center"
+                  target="_blank"
+                  href="https://api.whatsapp.com/send?phone=5574999220117&text=Ol%C3%A1%2C%20venho%20do%20linktree!%20Gostaria%20de%20ser%20atendido!"
+                >
+                  <Button className="bg-blue-800 w-[80%] text-center text-white rounded-xl  hover:animate-bounce">
+                    {" "}
+                    Comprar Agora
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           ))}

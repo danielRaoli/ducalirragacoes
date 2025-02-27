@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FaRegCircleCheck } from "react-icons/fa6";
 
 export default function Produtos() {
@@ -13,7 +14,7 @@ export default function Produtos() {
     <>
       <section
         id="produtos"
-        className="py-16 flex flex-col md:flex-row px-4 md:px-20"
+        className="py-16 flex flex-col md:flex-row  px-4 md:px-20"
       >
         <div className="relative h-[400px] w-full md:w-1/2">
           <Image
@@ -24,7 +25,7 @@ export default function Produtos() {
             priority
           />
         </div>
-        <div className="space-y-6">
+        <div className="space-y-6x">
           <h2 className="text-2xl md:text-3xl font-bold text-slate-800">
             Trabalhamos com <span className="text-blue-800">diversos</span>{" "}
             tipos de <span className="text-blue-800">produtos</span>
@@ -37,9 +38,14 @@ export default function Produtos() {
               </div>
             ))}
           </div>
-          <button className="mt-8 bg-blue-950 text-white px-8 py-3 rounded-md hover:bg-blue-900 transition-colors">
-            Ver Mais
-          </button>
+          <div className="mt-8">
+            <Link
+              href={"/produtos"}
+              className=" bg-blue-950 text-white px-8 py-3 rounded-md hover:bg-blue-900 transition-colors"
+            >
+              Ver Mais
+            </Link>
+          </div>
         </div>
       </section>
     </>
