@@ -5,8 +5,9 @@ import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 export default function Footer() {
   const navigation = [
     { name: "Início", href: "/" },
-    { name: "Sobre", href: "/sobre" },
+    { name: "Blog", href: "/blog" },
     { name: "Produtos", href: "/produtos" },
+    { name: "Contto", href: "/contato" },
   ];
 
   const social = [

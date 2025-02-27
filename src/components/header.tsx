@@ -60,8 +60,8 @@ export default function Header() {
             <Link href="/" className="text-white hover:text-blue-200">
               Início
             </Link>
-            <Link href="/sobre" className="text-white hover:text-blue-200">
-              Sobre
+            <Link href="/blog" className="text-white hover:text-blue-200">
+              blog
             </Link>
             <Link href="/produtos" className="text-white hover:text-blue-200">
               Produtos

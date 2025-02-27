@@ -16,14 +16,15 @@ export default function Beneficios() {
     },
     {
       icone: PiTractor,
-      titulo: "Benefício 1",
-      descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      titulo: "Compromisso",
+      descricao:
+        "Temos o compromisso de achar a solução ideal para sua plantação!",
     },
   ];
   return (
     <>
-      <section id="beneficios" className="bg-blue-950 text-white py-14 ">
-        <h2 className="font-semibold text-center text-xl md:text-2xl mb-14 md:mb-14">
+      <section id="beneficios" className="bg-blue-950 text-white py-8 md:py-14">
+        <h2 className="font-semibold text-center text-xl md:text-2xl mb-8 md:mb-14">
           Por quê nos escolher ?
         </h2>
         <div className=" w-full mx-auto flex flex-col items-center md:justify-center md:flex-row gap-14">
