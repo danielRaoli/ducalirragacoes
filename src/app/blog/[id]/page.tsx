@@ -6,12 +6,12 @@ import Link from "next/link";
 import { getById } from "../../../lib/posts"; // Ajuste o caminho conforme necessário
 
 type Props = {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 };
 
 // Função para gerar metadata dinâmica
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const post = getById(Number(params.id));
+  const post = getById(Number((await params).id));
 
   if (!post) {
     return {
@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function PostPage({ params }: Props) {
-  const post = getById(Number(params.id));
+  const post = getById(Number((await params).id));
 
   if (!post) {
     notFound();
