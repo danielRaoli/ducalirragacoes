@@ -1,6 +1,50 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Ducal Irrigações | Materiais e Produtos de Irrigação",
+  description:
+    "Conheça nossos principais produtos, opções para tubos, placa solares, aspersores, fitas gotejadores e muito mais.",
+  keywords:
+    "irrigação, sistemas de irrigação, materiais de irrigação, gotejamento, aspersão, tubos de irrigação, placas solares, cabos, instalação de irrigação, automação agrícola",
+  authors: [
+    { name: "Ducal Irrigações", url: "https://www.ducalirrigacoes.com" },
+  ],
+  openGraph: {
+    title: "Ducal Irrigações | Materiais e Serviços de Irrigação",
+    description:
+      "Especialistas em sistemas de irrigação para o agronegócio e residências. Conheça nossos principais serviços.",
+    url: "https://www.ducalirrigacoes.com",
+    siteName: "Ducal Irrigações",
+    images: [
+      {
+        url: "https://www.ducalirrigacoes.com/logo-ducal.png",
+        width: 1200,
+        height: 630,
+        alt: "Ducal Irrigações - Soluções para sistemas de irrigação",
+      },
+    ],
+    type: "website",
+    locale: "pt_BR",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ducal Irrigações | Materiais e Serviços de Irrigação",
+    description:
+      "Soluções completas para sistemas de irrigação. Produtos e serviços especializados para aumentar a produtividade da sua plantação.",
+    images: ["https://www.ducalirrigacoes.com/logo-ducal.png"],
+    creator: "@ducalirrigacoes",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: "https://www.ducalirrigacoes.com",
+  },
+};
 
 export default function Produtos() {
   return (
@@ -11,7 +55,7 @@ export default function Produtos() {
           Conheça Nossos Principais Produtos
         </h1>
         <div className="grid grid-cols-2 gap-2 md:gap-8 md:grid-cols-4">
-          {Array.from({ length: 11 }, (_, i) => (
+          {Array.from({ length: 20 }, (_, i) => (
             <Card className="w-full  h-[250px] max-w-[300px]  md:h-[350px]">
               <CardContent className="w-full flex flex-col items-center h-full p-0">
                 <div className=" relative w-full h-[70%] mb-4">
@@ -25,7 +69,7 @@ export default function Produtos() {
                 <a
                   className="w-full flex justify-center"
                   target="_blank"
-                  href="https://api.whatsapp.com/send?phone=5574999220117&text=Ol%C3%A1%2C%20venho%20do%20linktree!%20Gostaria%20de%20ser%20atendido!"
+                  href="https://api.whatsapp.com/send?phone=5574999220117&text=Ol%C3%A1%2C%vim%20do%site!%20Gostaria%20de%20ser%20atendido!"
                 >
                   <Button className="bg-blue-800 w-[80%] text-center text-white rounded-xl  hover:animate-bounce">
                     {" "}

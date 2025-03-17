@@ -19,7 +19,7 @@ export default function Header() {
       )}
     >
       {/* Top info bar */}
-      <div className="bg-blue-950 text-white justify-center py-2 px-4">
+      <div className="bg-blue-950 text-white justify-center py-2 px-4 md:px-20">
         <div className="container mx-auto flex items-center justify-between">
           <p className="text-sm hidden md:block">
             Av. Primeiro de Janeiro, 527 - Centro, Irecê - BA, 44900-000
@@ -45,7 +45,7 @@ export default function Header() {
 
       {/* Navigation */}
       <nav className={cn("py-4 transition-colors duration-300")}>
-        <div className="container mx-auto flex justify-between items-center px-4">
+        <div className="container mx-auto flex justify-between items-center px-4 md:px-20">
           <Link href="/">
             <Image
               src="/logo-ducal.png"

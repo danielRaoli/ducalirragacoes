@@ -7,7 +7,7 @@ export default function Footer() {
     { name: "Início", href: "/" },
     { name: "Blog", href: "/blog" },
     { name: "Produtos", href: "/produtos" },
-    { name: "Contto", href: "/contato" },
+    { name: "Contato", href: "/contato" },
   ];
 
   const social = [
@@ -18,7 +18,7 @@ export default function Footer() {
     },
     {
       name: "WhatsApp",
-      href: "https://wa.me/5574999999999",
+      href: "https://api.whatsapp.com/send?phone=5574999220117&text=Ol%C3%A1%2C%vim%20do%20site!%20Gostaria%20de%20ser%20atendido!",
       icon: FaWhatsapp,
     },
   ];

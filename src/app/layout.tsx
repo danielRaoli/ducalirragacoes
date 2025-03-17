@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "Ducal Irrigações",
     images: [
       {
-        url: "https://www.ducalirrigacoes.com/produtos.png",
+        url: "https://www.ducalirrigacoes.com/logo-ducal.png",
         width: 1200,
         height: 630,
         alt: "Ducal Irrigações - Soluções para sistemas de irrigação",

@@ -14,7 +14,7 @@ export default function Produtos() {
     <>
       <section
         id="produtos"
-        className="py-16 flex flex-col md:flex-row  px-4 md:px-20"
+        className="py-16 flex flex-col md:flex-row  px-4 md:px-20 md:py-24"
       >
         <div className="relative h-[400px] w-full md:w-1/2">
           <Image

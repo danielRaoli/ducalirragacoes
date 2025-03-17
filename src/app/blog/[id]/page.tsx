@@ -1,16 +1,47 @@
 // app/blog/[id]/page.tsx
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { getById } from "../../../lib/posts"; // Ajuste o caminho conforme necessário
 
-export default async function PostPage({
-  params,
-}: {
-  params: Promise<{ id: string }>;
-}) {
-  const { id } = await params;
-  const post = getById(Number(id));
+type Props = {
+  params: { id: string };
+};
+
+// Função para gerar metadata dinâmica
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const post = getById(Number(params.id));
+
+  if (!post) {
+    return {
+      title: "Post não encontrado",
+      description: "O post que você procura não existe.",
+    };
+  }
+
+  return {
+    title: `${post.titulo} - Blog sobre Irrigação`,
+    description: post.topicos[0].conteudo.substring(0, 150) + "...",
+    openGraph: {
+      title: post.titulo,
+      description: post.topicos[0].conteudo.substring(0, 150) + "...",
+      url: `https://seusite.com/blog/${post.id}`,
+      type: "article",
+      images: [
+        {
+          url: `https://seusite.com${post.imagem}`,
+          width: 1200,
+          height: 630,
+          alt: post.titulo,
+        },
+      ],
+    },
+  };
+}
+
+export default async function PostPage({ params }: Props) {
+  const post = getById(Number(params.id));
 
   if (!post) {
     notFound();
@@ -28,7 +59,7 @@ export default async function PostPage({
       <div className="w-[85%] md:w-[50%] mx-auto h-[400px] flex justify-center relative">
         <Image
           src={post.imagem}
-          alt="imagem sobre artigo de irrigação"
+          alt={post.titulo}
           fill
           className="object-cover"
         />

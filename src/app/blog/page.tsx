@@ -2,6 +2,34 @@ import Image from "next/image";
 import posts from "../../lib/posts";
 import { BentoGrid, BentoCard } from "../../components/magicui/bento-grid";
 import { FileTextIcon } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blog sobre Irrigação - Tudo o que você precisa saber",
+  description:
+    "Leia nossos artigos e aprenda tudo sobre sistemas de irrigação para otimizar sua produção agrícola.",
+  keywords:
+    "irrigação, sistemas de irrigação, materiais de irrigação, gotejamento, aspersão, tubos de irrigação, instalação de irrigação, automação agrícola",
+  authors: [
+    { name: "Ducal Irrigações", url: "https://www.ducalirrigacoes.com" },
+  ],
+  openGraph: {
+    title: "Blog sobre Irrigação - Tudo o que você precisa saber",
+    description:
+      "Leia nossos artigos e aprenda tudo sobre sistemas de irrigação para otimizar sua produção agrícola.",
+    url: "https://seusite.com/blog",
+    type: "website",
+    images: [
+      {
+        url: "https://seusite.com/pivocentral.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Imagem de um sistema de irrigação",
+      },
+    ],
+  },
+};
+
 export default function Blog() {
   return (
     <>
@@ -16,7 +44,7 @@ export default function Blog() {
             priority
           />
           <div className="absolute inset-0 bg-black bg-opacity-50" />
-          <div className="absolute inset-0 z-50 flex items-center justify-center text-white">
+          <div className="absolute inset-0 z-40 flex items-center justify-center text-white">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-center px-4">
               Aprenda Tudo Sobre Irrigações
             </h1>
