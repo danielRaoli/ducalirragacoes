@@ -11,17 +11,17 @@ export const metadata: Metadata = {
   keywords:
     "irrigação, sistemas de irrigação, materiais de irrigação, gotejamento, aspersão, tubos de irrigação, instalação de irrigação, automação agrícola",
   authors: [
-    { name: "Ducal Irrigações", url: "https://www.ducalirrigacoes.com" },
+    { name: "Ducal Irrigações", url: "https://www.ducalirrigacoes.net.br" },
   ],
   openGraph: {
     title: "Blog sobre Irrigação - Tudo o que você precisa saber",
     description:
       "Leia nossos artigos e aprenda tudo sobre sistemas de irrigação para otimizar sua produção agrícola.",
-    url: "https://seusite.com/blog",
+    url: "https://www.ducalirrigacoes.net.br/blog",
     type: "website",
     images: [
       {
-        url: "https://seusite.com/pivocentral.jpg",
+        url: "https://www.ducalirrigacoes.net.br/pivocentral.jpg",
         width: 1200,
         height: 630,
         alt: "Imagem de um sistema de irrigação",

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -22,9 +23,12 @@ export default function HeroSection() {
           <p className="text-xl text-white mb-8">
             Oferecemos soluções de alta qualidade, com o melhor atendimento!
           </p>
-          <button className="bg-blue-900 text-white px-8 py-3 rounded-md hover:bg-blue-950 transition-colors">
+          <Link
+            href={"/contato"}
+            className="bg-blue-900 text-white px-8 py-3 rounded-md hover:bg-blue-950 transition-colors"
+          >
             Saiba Mais
-          </button>
+          </Link>
         </div>
       </div>
     </div>

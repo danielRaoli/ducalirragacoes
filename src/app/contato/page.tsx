@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { InstagramLogoIcon } from "@radix-ui/react-icons";
 
 import Image from "next/image";

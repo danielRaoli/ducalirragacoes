@@ -18,17 +18,17 @@ export const metadata: Metadata = {
   keywords:
     "irrigação, sistemas de irrigação, materiais de irrigação, gotejamento, aspersão, tubos de irrigação, instalação de irrigação, automação agrícola",
   authors: [
-    { name: "Ducal Irrigações", url: "https://www.ducalirrigacoes.com" },
+    { name: "Ducal Irrigações", url: "https://www.ducalirrigacoes.net.br" },
   ],
   openGraph: {
     title: "Ducal Irrigações | Materiais e Serviços de Irrigação",
     description:
       "Especialistas em sistemas de irrigação para o agronegócio e residências. Oferecemos produtos de alta qualidade e instalação profissional.",
-    url: "https://www.ducalirrigacoes.com",
+    url: "https://www.ducalirrigacoes.net.br",
     siteName: "Ducal Irrigações",
     images: [
       {
-        url: "https://www.ducalirrigacoes.com/logo-ducal.png",
+        url: "https://www.ducalirrigacoes.net.br/logo-ducal.png",
         width: 1200,
         height: 630,
         alt: "Ducal Irrigações - Soluções para sistemas de irrigação",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Ducal Irrigações | Materiais e Serviços de Irrigação",
     description:
       "Soluções completas para sistemas de irrigação. Produtos e serviços especializados para aumentar a produtividade da sua plantação.",
-    images: ["https://www.ducalirrigacoes.com/imagem-de-capa.jpg"],
+    images: ["https://ducalirrigacoes.net.br/imagem-de-capa.jpg"],
     creator: "@ducalirrigacoes",
   },
   robots: {
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://www.ducalirrigacoes.com",
+    canonical: "https://ducalirrigacoes.net.br",
   },
 };
 

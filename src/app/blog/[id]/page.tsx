@@ -26,11 +26,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: post.titulo,
       description: post.topicos[0].conteudo.substring(0, 150) + "...",
-      url: `https://seusite.com/blog/${post.id}`,
+      url: `https://www.ducalirrigacoes.net.br/blog/${post.id}`,
       type: "article",
       images: [
         {
-          url: `https://seusite.com${post.imagem}`,
+          url: `https://www.ducalirrigacoes.net.br/${post.imagem}`,
           width: 1200,
           height: 630,
           alt: post.titulo,

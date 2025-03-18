@@ -1,8 +1,13 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { Input } from "./ui/input";
+import { SendHorizontal } from "lucide-react";
 
 export default function Footer() {
+  const [message, setMessage] = useState("");
   const navigation = [
     { name: "Início", href: "/" },
     { name: "Blog", href: "/blog" },
@@ -27,7 +32,7 @@ export default function Footer() {
     <footer className="bg-blue-950 text-white flex flex-col items-center py-12  px-4 md:px-20 w-full">
       <div className="flex flex-col md:flex-row  justify-around gap-8 w-full">
         {/* Logo e Descrição */}
-        <div className="space-y-4">
+        <div className="space-y-4 flex flex-col items-center max-w-[300px] ">
           <Image
             src="/logo-ducal.png"
             alt="Ducal Irrigações"
@@ -35,11 +40,25 @@ export default function Footer() {
             height={50}
             className="object-contain"
           />
-          <p className="text-gray-300 text-sm max-w-md">
-            Lorem ipsum dolor sit amet consectetur. Tellus id tempus eu arcu et
-            senectus pellentesque maecenas ac. Pellentesque tortor posuere
-            faucibus vitae molestie risus.
+          <p className=" text-center">
+            Ainda não achou o que procurava? fale com a gente!
           </p>
+          <div className="flex gap-2">
+            <Input
+              placeholder="Envie uma Mensagem "
+              className="bg-blue-100 text-black"
+              type="text"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            ></Input>
+            <Link
+              target="_blank"
+              href={`https://api.whatsapp.com/send?phone=5574999220117&text=${message}`}
+              className="bg-blue-100 p-1 hover:bg-blue-300 text-blue-950 flex items-center rounded-md text-center"
+            >
+              <SendHorizontal />
+            </Link>
+          </div>
         </div>
 
         {/* Navegação */}
